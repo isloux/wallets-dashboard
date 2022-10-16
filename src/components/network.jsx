@@ -20,9 +20,24 @@ const Network = (props) => {
       "Avalanche C-Chain Fuji Testnet",
       "https://rpc.ankr.com/avalanche_fuji"
     );
+    providers.set(
+      "zkSync Alpha Testnet",
+      "https://zksync2-testnet.zksync.dev"
+    );
+    providers.set(
+      "Binance Smart Chain Testnet",
+      "https://data-seed-prebsc-1-s1.binance.org:8545"
+    ),
+    providers.set(
+      "Moonbase Alpha Testnet",
+      "https://rpc.api.moonbase.moonbeam.network"
+    );
     const coins = new Map();
     coins.set("Milkomeda Cardano Testnet", "MILKTADA");
     coins.set("Avalanche C-Chain Fuji Testnet", "AVAX");
+    coins.set("zkSync Alpha Testnet", "ETH");
+    coins.set("Binance Smart Chain Testnet", "BNB");
+    coins.set("Moonbase Alpha Testnet", "GLMR");
     setProvider(providers.get(props.children));
     setCoin(coins.get(props.children));
   };

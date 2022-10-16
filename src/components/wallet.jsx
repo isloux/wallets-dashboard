@@ -18,9 +18,10 @@ const Wallet = (props) => {
       </Heading>
       <Stack spacing="12px">
         <Network wallet={props.children}>Milkomeda Cardano Testnet</Network>
-        <Network wallet={props.children}>
-          Avalanche C-Chain Fuji Testnet
-        </Network>
+        <Network wallet={props.children}>Avalanche C-Chain Fuji Testnet</Network>
+        <Network wallet={props.children}>zkSync Alpha Testnet</Network>
+        <Network wallet={props.children}>Binance Smart Chain Testnet</Network>
+        <Network wallet={props.children}>Moonbase Alpha Testnet</Network>
       </Stack>
     </>
   );
